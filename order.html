@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Cookies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carina's Cookie Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Place Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="order">
+        <h2>Order Your Cookies</h2>
+        <p>Hello! Thank you for your interest in our custom sugar cookies. Please take a few moments to provide us with the details of your custom cookie order. Your responses will help us understand your preferences and requirements. Please allow 2 business days to hear back with a quote and availability confirmation.</p>
+        
+        <!-- Cookie Menu Section -->
+        <section id="menu">
+            <h2>Our Cookie Menu</h2>
+            <ul>
+                <li>Simple - $54.00</li>
+                <li>Detailed - $60.00</li>
+                <li>Minis - $25.00</li>
+            </ul>
+            <p>Order minimum of 1 dozen simple/detailed or 2 dozen minis required.</p>
+        </section>
+
+        <!-- Order Form -->
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="cookies">Select Cookie(s):</label>
+            <select id="cookies" required>
+                <option value="simple">Simple</option>
+                <option value="detailed">Detailed</option>
+                <option value="minis">Minis</option>
+                <option value="none">None</option>
+            </select>
+            
+            <p>How many cookies would you like to order? (Ex. 2 dozen standard cookies)</p>
+            <p>*Note: Minimum of 1 dozen standard/detailed or 2 dozen minis is required*</p>
+            <input type="text" id="amount" required>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Carina's Cookie Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
